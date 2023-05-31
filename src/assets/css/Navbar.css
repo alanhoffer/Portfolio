@@ -1,0 +1,8 @@
+.Navbar{
+    position: fixed;   z-index: 10000;
+
+    right: 5%;
+    top: 50vh;  /* position the top  edge of the element at the middle of the parent */
+    bottom: 50vh; /* position the left edge of the element at the middle of the parent */
+
+}

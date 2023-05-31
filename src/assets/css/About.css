@@ -1,0 +1,33 @@
+.About {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    width: 70%;
+    scroll-snap-align: center;
+}
+
+.meContainer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.mePresentation {
+    width: 50%;
+}
+
+.meDescription {
+    width: 50%;
+}
+
+.presentationTitle {
+    font-size: 36px;
+    max-width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.presentationText {
+
+    opacity: .7;
+}

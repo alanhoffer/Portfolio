@@ -1,0 +1,36 @@
+.Projects {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    width: 70%;
+    scroll-snap-align: center;
+}
+
+.sliderItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 600px;
+}
+
+
+
+
+.sliderItemContainer{
+    min-width: 30%;
+    text-align: left;
+}
+
+.sliderImageContainer{
+
+    margin-right: 50px;
+}
+
+
+
+.itemButton img {
+    width: 0px;
+    height: 0px;
+}

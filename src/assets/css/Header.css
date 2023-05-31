@@ -1,0 +1,45 @@
+
+.Header{   z-index: 10000;
+
+    display:flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 100px;
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.logoContainer .logoText{
+    color: #f0f8ff;
+    font-size: 28px;
+    margin:0;
+    padding:0;
+}
+
+.contactContainer .contactButton{
+    background: #f0f8ff;
+    padding: 10px 30px;
+    display: block;
+    border: 2px solid #f0f8ff;
+    background-color: transparent;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+    color: #f0f8ff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.contactContainer .contactButton:hover{
+    color: #141416;
+    background-color: #f0f8ff ;
+}
