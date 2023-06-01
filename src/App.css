@@ -1,7 +1,7 @@
-.App {
-    background-color: #141416;
-    color: #f0f8ff;
 
+.App {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     display: flex;
     align-items: center;
     height: 100vh;

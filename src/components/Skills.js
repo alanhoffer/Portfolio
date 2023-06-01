@@ -4,7 +4,7 @@ function Skills() {
     return (
         <div id="skills" className="Skills">
             <section className='skillsContainer'>
-                <h3 className='skillsSubTitle'> A PROBLEM IS A CHANCE FOR YOU TO DO YOUR BEST. </h3>
+                <h3 className='skillsSubTitle'> REMEMBER, IF YOU CAN IMAGINE IT, YOU CAN PROGRAM IT.</h3>
                 <h1 className='skillsTitle'> Skills & Experience </h1>
 
 
@@ -12,9 +12,7 @@ function Skills() {
                     <p>
                         The main area of expertise is front end development (client side of the web).
                     </p>
-                    HTML, CSS, JS, building small and medium web applications with Vue or React, custom plugins, features, animations, and coding interactive layouts. I have also full-stack developer experience with one of the most popular open source CMS on the web - WordPress
-
-                    Visit my Linkedin for more details. </p>
+                    I am a versatile full stack developer proficient in JavaScript, React, Vue, CSS3, HTML5, Git, Visual Studio, NestJS, Python, MySQL, and Figma. With expertise in both frontend and backend development, I deliver comprehensive web solutions with visually appealing interfaces and efficient code management.</p>
 
                 <ul className='skillsList'>
                     <li className='skillsListItem'>

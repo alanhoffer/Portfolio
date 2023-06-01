@@ -10,6 +10,11 @@
     display: flex;
     align-items: center;
     padding: 20px;
+
+    background-image:
+        linear-gradient(to bottom, #141416e7, #141416e7),
+        url('../images/me.png');
+    background-repeat: no-repeat;
 }
 
 .mePresentation {

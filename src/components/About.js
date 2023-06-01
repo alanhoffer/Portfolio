@@ -6,18 +6,17 @@ function About() {
             <section className='meContainer'>
                 <div className='mePresentation'>
                     <h1 className='presentationTitle'> Hi, I'm Alan FStack Developer</h1>
-                    <p className='presentationText'> Front End Developer / JavaScript Fan / Wordpress Expert</p>
+                    <p className='presentationText'> Back End Fan / Front End Expert / Programming Lover. </p>
                 </div>
                 <div className='meDescription'>
                     <p>
-                        Professionally connected with the web development industry.
+                        I am a passionate web developer skilled in React, VueJS, NestJS, and agile methodologies.
                     </p>
                     <p>
-                        Problem solver, well-organised person, loyal employee with high attention to detail.
-                        Fan of Boxing, outdoor activities, video games, and coding of course.
+                        With a strong commitment to my work, I strive to deliver high-quality results. I value effective communication and actively engage with team members, stakeholders, and clients. As a team player, I contribute actively, support my colleagues, and promote collaboration.
                     </p>
                     <p>
-                        Interested in the entire frontend spectrum and working on ambitious projects with interesting people.
+                        Adaptability is one of my strengths, allowing me to keep up with evolving technologies. I am always eager to learn and improve my skills. My dedication to continuous growth drives me to seek opportunities for self-improvement. In summary, I am a communicative, committed, and adaptable web developer, constantly aiming to enhance my abilities.
                     </p>
                 </div>
             </section>

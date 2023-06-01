@@ -28,9 +28,34 @@
     margin-right: 50px;
 }
 
+.itemButton{
+    display:flex;
+    align-items: center;
+    color: var(--terciary-color);
+    width: 100%;
+}
+
+.itemButton a{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--terciary-color);
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.itemButton svg{
+    transition: all .3s ease-in-out;
+    width: 12px;
+    margin-right: 20px;
+}
+.itemButton:hover svg{
+    transform: translateX(5px);
+    transition: all .3s ease-in-out;
+}
+
 
 
 .itemButton img {
-    width: 0px;
-    height: 0px;
+    width: 40px !important;
 }
