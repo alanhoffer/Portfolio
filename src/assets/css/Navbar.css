@@ -1,8 +1,38 @@
-.Navbar{
-    position: fixed;   z-index: 10000;
+.Navbar {
+    position: fixed;
+    z-index: 10000;
 
     right: 5%;
-    top: 50vh;  /* position the top  edge of the element at the middle of the parent */
-    bottom: 50vh; /* position the left edge of the element at the middle of the parent */
+    top: 50vh;
+    /* position the top  edge of the element at the middle of the parent */
+    bottom: 50vh;
+    /* position the left edge of the element at the middle of the parent */
 
+}
+
+.Navbar ul{
+    list-style: none;
+}
+
+.Navbar ul li{
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 0;
+    font-size: 12px;
+}
+
+
+.Navbar li a {
+    text-decoration: none;
+    padding: 14px;
+    color: #f0f8ff;
+    border-right: 3px solid #5c5c5c;
+}
+
+.Navbar li a.active{
+    border-right: 3px solid #f0f8ff;
+}
+
+.Navbar li a:hover{
+    border-right: 3px solid #f0f8ff;
 }
