@@ -15,6 +15,19 @@
         linear-gradient(to bottom, #141416e7, #141416e7),
         url('../images/me.png');
     background-repeat: no-repeat;
+    animation: imageAnimation;
+    animation-duration: 2s;
+}
+
+@keyframes imageAnimation {
+    from{
+        
+    background-position-y: 50px;
+    }
+    to{
+        
+    background-position-y: 0px;
+    }
 }
 
 .mePresentation {
