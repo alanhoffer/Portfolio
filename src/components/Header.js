@@ -10,7 +10,7 @@ function Header() {
                     <h1 className='logoText'>PORTFOLIO</h1>
                 </div>
                 <div className='contactContainer'>
-                    <button className='contactButton'>Contact</button>
+                    <a href='#contact' className='contactButton'>Contact</a>
                 </div>
             </header>
     );

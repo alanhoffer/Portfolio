@@ -1,0 +1,131 @@
+.Contact {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    width: 70%;
+    scroll-snap-align: center;
+}
+
+.contactContent {
+    display: flex;
+    width: 100%;
+}
+
+.contactInfo{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contactTitle h1{
+    font-size: 36px;
+}
+
+.contactTitle p{
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.contactData{
+    padding: 50px 0;
+}
+
+
+.contactDataItem{
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 10px;
+    margin:10px;
+    max-width: 250px;
+    border-radius: 6px;
+    user-select: none;
+    border: 2px solid transparent;
+}
+
+.contactDataItem:hover{
+    border: 2px solid var(--secondary-color);
+}
+
+.contactDataItem svg{
+    margin-right: 15px;
+    width: 16px;
+}
+
+.contactSocial{
+    display:flex;
+}
+
+.contactSocialItem{
+    cursor: pointer;
+    padding: 10px;
+    margin:10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    user-select: none;
+    border: 2px solid transparent;
+}
+
+.contactSocialItem svg{
+    height: 24px;
+}
+
+.contactSocialItem:hover{
+    border: 2px solid var(--secondary-color);
+}
+
+.contactForm{
+    display:flex;
+    width: 35%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactForm p{
+    font-weight: 500;
+}
+
+.contactForm input{
+    width: 100%;
+    padding:10px 15px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 0px;
+    outline: none;
+}
+
+.contactForm textarea{
+    overflow: none;
+    width: 100%;
+    resize: none;
+    outline: none;
+    padding:10px 15px;
+    height: 150px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 0px;
+}
+
+.contactFormSubmit input{
+    background: var(--secondary-color);
+    padding: 10px 30px;
+    display: block;
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    margin:20px 0;
+    width: 50%;
+    margin-left:auto;
+}
+
+.contactFormSubmit input:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color) ;
+}

@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -27,6 +28,9 @@ function App() {
     if (main.scrollTop >= (mainSize * 3 )) {
         setPosition(4);
     }      
+    if (main.scrollTop >= (mainSize * 4 )) {
+      setPosition(5);
+  }      
   
   };
 
@@ -38,6 +42,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </div>
   );
 }

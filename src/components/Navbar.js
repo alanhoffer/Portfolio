@@ -11,6 +11,7 @@ function Navbar({ props }) {
                 <li><a href='#about' className={props == 2 ? 'active' : ''}>ABOUT</a></li>
                 <li><a href='#skills' className={props == 3 ? 'active' : ''}>SKILLS</a></li>
                 <li><a href='#projects' className={props == 4 ? 'active' : ''}>PROJECTS</a></li>
+                <li><a href='#contact' className={props == 5 ? 'active' : ''}>CONTACT</a></li>
             </ul>
             <div className='scrollDown'>
                 <p>
