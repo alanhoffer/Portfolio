@@ -1,12 +1,11 @@
 .Navbar {
     position: fixed;
     z-index: 10000;
-
-    right: 5%;
-    top: 50vh;
-    /* position the top  edge of the element at the middle of the parent */
-    bottom: 50vh;
-    /* position the left edge of the element at the middle of the parent */
+    width: fit-content;
+    right: 0;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -25%);
 
 }
 
@@ -31,8 +30,49 @@
 
 .Navbar li a.active{
     border-right: 3px solid #f0f8ff;
+    transition: all .3s ease-in-out;
 }
 
 .Navbar li a:hover{
     border-right: 3px solid #f0f8ff;
+    transition: all .3s ease-in-out;
+}
+
+.Navbar .scrollDown{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #5c5c5c;
+}
+
+.Navbar .scrollDown:hover{
+    color: #f0f8ff;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.Navbar .scrollDown p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.Navbar .scrollDown span{
+    margin:0;
+    text-align: right;
+    padding:0;
+}
+
+.Navbar .scrollDown svg{
+    margin-top: 10px;
+    width: 14px;
+    transition: all .3s ease-in-out;
+}
+
+.Navbar .scrollDown:hover svg {
+    transform: translateY(5px);
 }
