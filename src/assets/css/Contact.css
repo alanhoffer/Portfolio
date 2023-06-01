@@ -11,103 +11,110 @@
     width: 100%;
 }
 
-.contactInfo{
-    display:flex;
+.contactInfo {
+    display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 50%;
+    margin:20px;
+    padding:0 30px;
+    background-image:
+        linear-gradient(to right, #141416f6, var(--primary-color)),
+        url('../images/location.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.contactTitle h1{
+.contactTitle h1 {
     font-size: 36px;
 }
 
-.contactTitle p{
+.contactTitle p {
     font-size: 18px;
     opacity: 0.7;
 }
 
-.contactData{
+.contactData {
     padding: 50px 0;
 }
 
 
-.contactDataItem{
-    display:flex;
+.contactDataItem {
+    display: flex;
     align-items: center;
     cursor: pointer;
     padding: 0 10px;
-    margin:10px;
+    margin: 10px;
     max-width: 250px;
     border-radius: 6px;
     user-select: none;
     border: 2px solid transparent;
 }
 
-.contactDataItem:hover{
+.contactDataItem:hover {
     border: 2px solid var(--secondary-color);
 }
 
-.contactDataItem svg{
+.contactDataItem svg {
     margin-right: 15px;
     width: 16px;
 }
 
-.contactSocial{
-    display:flex;
+.contactSocial {
+    display: flex;
 }
 
-.contactSocialItem{
+.contactSocialItem {
     cursor: pointer;
     padding: 10px;
-    margin:10px;
+    margin: 10px;
     box-sizing: border-box;
     border-radius: 6px;
     user-select: none;
     border: 2px solid transparent;
 }
 
-.contactSocialItem svg{
+.contactSocialItem svg {
     height: 24px;
 }
 
-.contactSocialItem:hover{
+.contactSocialItem:hover {
     border: 2px solid var(--secondary-color);
 }
 
-.contactForm{
-    display:flex;
+.contactForm {
+    display: flex;
     width: 35%;
     justify-content: center;
     flex-direction: column;
 }
 
-.contactForm p{
+.contactForm p {
     font-weight: 500;
 }
 
-.contactForm input{
+.contactForm input {
     width: 100%;
-    padding:10px 15px;
+    padding: 10px 15px;
     box-sizing: border-box;
     border-radius: 3px;
     border: 0px;
     outline: none;
 }
 
-.contactForm textarea{
+.contactForm textarea {
     overflow: none;
     width: 100%;
     resize: none;
     outline: none;
-    padding:10px 15px;
+    padding: 10px 15px;
     height: 150px;
     box-sizing: border-box;
     border-radius: 3px;
     border: 0px;
 }
 
-.contactFormSubmit input{
+.contactFormSubmit input {
     background: var(--secondary-color);
     padding: 10px 30px;
     display: block;
@@ -120,12 +127,12 @@
     color: var(--secondary-color);
     cursor: pointer;
     transition: all .3s ease-in-out;
-    margin:20px 0;
+    margin: 20px 0;
     width: 50%;
-    margin-left:auto;
+    margin-left: auto;
 }
 
-.contactFormSubmit input:hover{
+.contactFormSubmit input:hover {
     color: var(--primary-color);
-    background-color: var(--secondary-color) ;
+    background-color: var(--secondary-color);
 }
