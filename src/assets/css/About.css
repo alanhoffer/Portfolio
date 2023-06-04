@@ -1,6 +1,7 @@
 .About {
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 100%;
     width: 70%;
     scroll-snap-align: center;
@@ -10,7 +11,6 @@
     display: flex;
     align-items: center;
     padding: 20px;
-
     background-image:
         linear-gradient(to bottom, #141416e7, #141416e7),
         url('../images/me.png');
@@ -20,37 +20,40 @@
 }
 
 @keyframes imageAnimation {
-    from{
-        
-    background-position-y: 50px;
+    from {
+
+        background-position-y: 50px;
     }
-    to{
-        
-    background-position-y: 0px;
+
+    to {
+
+        background-position-y: 0px;
     }
 }
 
 .mePresentation {
     width: 50%;
+    margin-right: 50px;
 }
 
 .meDescription {
     width: 50%;
 }
 
-.meDescription h3{
+.meDescription h3 {
+    font-size: 1.rem;
     opacity: 0.7;
 }
 
-.meDescription .downloadResume{
-    display:flex;
+.meDescription .downloadResume {
+    display: flex;
     align-items: center;
-    border:none;
+    border: none;
     cursor: pointer;
-    margin:20px 0px;
+    margin: 20px 0px;
 }
 
-.meDescription .downloadResume a{
+.meDescription .downloadResume a {
     background: var(--secondary-color);
     padding: 10px 30px;
     display: block;
@@ -59,21 +62,20 @@
     border-radius: 6px;
     font-weight: 600;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--secondary-color);
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
 
-.meDescription .downloadResume a:hover{
-    
+.meDescription .downloadResume a:hover {
+
     color: var(--terciary-color);
     border: 2px solid var(--terciary-color);
 }
 
 .presentationTitle {
-    font-size: 36px;
-    max-width: 300px;
+    font-size: 2rem;
     margin: 0;
     padding: 0;
 }
@@ -81,4 +83,25 @@
 .presentationText {
 
     opacity: .7;
+}
+
+@media screen and (max-width: 1024px) {
+    .About {
+        width: 80%;
+    }
+    .meContainer {
+        flex-direction: column;
+        background-size: cover;
+
+    }
+
+    .mePresentation {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .meDescription {
+        width: 100%;
+    }
+    
 }

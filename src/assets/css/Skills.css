@@ -2,6 +2,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 100%;
     width: 70%;
     scroll-snap-align: center;
@@ -24,11 +25,11 @@
 .skillsTitle{
     margin:0;
     padding:0;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .skillsDescription{
-    max-width: 600px;
+    max-width: 800px;
     margin:0;
     padding:40px 0;
 }
@@ -45,7 +46,6 @@
 .skillsListItem{
     animation: example;
     animation-duration: 3s;
-    width: 100px;
 }
 
 
@@ -73,10 +73,16 @@
 }
 
 .skillsListItem svg {
-    width: 50px;
-    height: 40px;
+    width: 2.77rem;
+    height: 2.2rem;
 }
 
 .skillsListItem p{
     font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+    .Skills{
+        width: 80%;
+    }
 }

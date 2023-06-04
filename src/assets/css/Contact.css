@@ -26,16 +26,16 @@
 }
 
 .contactTitle h1 {
-    font-size: 36px;
+    font-size: 2rem;
 }
 
 .contactTitle p {
-    font-size: 18px;
+    font-size: 1rem;
     opacity: 0.7;
 }
 
 .contactData {
-    padding: 50px 0;
+    padding: 3rem 0;
 }
 
 
@@ -75,7 +75,7 @@
 }
 
 .contactSocialItem svg {
-    height: 24px;
+    height: 1.5rem;
 }
 
 .contactSocialItem:hover {
@@ -108,7 +108,7 @@
     resize: none;
     outline: none;
     padding: 10px 15px;
-    height: 150px;
+    height: 8rem;
     box-sizing: border-box;
     border-radius: 3px;
     border: 0px;
@@ -116,14 +116,14 @@
 
 .contactFormSubmit input {
     background: var(--secondary-color);
-    padding: 10px 30px;
+    padding: 0.6rem 1rem;
     display: block;
     border: 2px solid var(--secondary-color);
     background-color: transparent;
     border-radius: 6px;
     font-weight: 600;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--secondary-color);
     cursor: pointer;
     transition: all .3s ease-in-out;
@@ -135,4 +135,25 @@
 .contactFormSubmit input:hover {
     color: var(--primary-color);
     background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1024px) {
+    .Contact {
+        width: 80%;
+    }
+    .contactContent{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .contactInfo{
+        width: 100%;
+        margin:30px 0;
+    }
+    .contactForm {
+        width: 100%;
+    }
+    .contactData {
+        padding: 0.5rem 0;
+    }
+    
 }
