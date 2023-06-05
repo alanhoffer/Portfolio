@@ -72,7 +72,7 @@ function App() {
 
   return (
     <div className={darkMode ? "App dark" : "App"} onScroll={(event) => scrollEvent(event)}>
-      <Navbar props={position} />
+      <Navbar position={position} handlePosition={setPosition} />
       <Header darkMode={darkMode} toggleDark={toggleDark} />
       <Home />
       <About />

@@ -8,11 +8,11 @@
     transform: translate(-50%, -25%);
 }
 
-.Navbar ul{
+.Navbar ul {
     list-style: none;
 }
 
-.Navbar ul li{
+.Navbar ul li {
     text-align: right;
     box-sizing: border-box;
     margin: 3px 0;
@@ -24,35 +24,42 @@
 
 .Navbar li a {
     text-decoration: none;
-    color: #f0f8ff;
+    color: var(--secondary-color);
 }
 
-.Navbar ul li.active{
-    border-right: 3px solid #f0f8ff;
+.Navbar ul li.active {
+    border-right: 3px solid var(--secondary-color);
     transition: all .3s ease-in-out;
 }
 
-.Navbar ul li.hover{
-    border-right: 3px solid #f0f8ff;
+.Navbar ul li.hover {
+    border-right: 3px solid var(--secondary-color);
     transition: all .3s ease-in-out;
 }
 
-.Navbar .scrollDown{
+.Navbar .scrollDown {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     color: #5c5c5c;
 }
 
-.Navbar .scrollDown:hover{
-    color: #f0f8ff;
+.Navbar .scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #5c5c5c;
+}
+
+.Navbar .scroll:hover {
+    color: var(--secondary-color);
     transition: all .2s ease-in-out;
     cursor: pointer;
     user-select: none;
 
 }
 
-.Navbar .scrollDown p {
+.Navbar .scroll p {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,27 +67,32 @@
     line-height: .66rem;
 }
 
-.Navbar .scrollDown span{
-    margin:0;
+.Navbar .scroll span {
+    margin: 0;
     text-align: right;
-    padding:0;
+    padding: 0;
 }
 
-.Navbar .scrollDown svg{
+.Navbar .scroll svg {
     margin-top: 10px;
     width: 0.75rem;
     transition: all .3s ease-in-out;
 }
 
-.Navbar .scrollDown:hover svg {
+.Navbar .scroll.Down:hover svg {
     transform: translateY(5px);
+}
+
+.Navbar .scroll.Up:hover svg {
+    transform: translateY(-5px);
 }
 
 @media screen and (max-width: 1024px) {
     .Navbar {
         transform: translate(-1%, -40%);
     }
-    .Navbar li a{
-        display:none;
+
+    .Navbar li a {
+        display: none;
     }
 }

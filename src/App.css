@@ -21,8 +21,8 @@ html {
     --primary-color: #f0f8ff;
     --secondary-color: #141416;
     --terciary-color: #44AF91;
-    --primary-transparent: #141416f6;
     --primary-transparent: #f0f8ff94;
+    --secondary-transparent: #141416f6;
 }
 
 @media screen and (max-width: 3940px) {

@@ -2,6 +2,12 @@ import '../assets/css/Contact.css';
 
 function Contact(props) {
 
+
+    function sendMail() {
+
+    }
+
+
     const copyToBoard = (e) => {
         navigator.clipboard.writeText(e.target.innerText).then(function () {
             props.alertFunction('Copying to clipboard was successful!')
@@ -71,7 +77,7 @@ function Contact(props) {
                         <p> Message</p>
                         <textarea placeholder='Message' />
                     </div>
-                    <div className='contactFormSubmit'>
+                    <div className='contactFormSubmit' onClick={() => sendMail('Test Name', "alanhoffer97@hotmail.com", 'Test Subject', 'Test Message')}>
                         <input type='button' placeholder='write your name' value="Send" />
                     </div>
                 </div>
