@@ -1,18 +1,52 @@
+import { useState } from 'react';
 import '../assets/css/Contact.css';
+import SpanDivider from './SpanDivider';
 
 function Contact(props) {
 
+    const [contactForm, setContactForm] = useState({ name: '', email: '', message: '' })
+    const [formLoading, setFormLoading] = useState(false)
+
+    const checkContactForm = () => {
+        if (contactForm.name.length < 8) {
+            props.alertFunction('Error', 'Name too short!')
+            return false
+        }
+        if (contactForm.email.length < 12) {
+            props.alertFunction('Error', 'Enter valid email please!')
+            return false
+        }
+        if (contactForm.message.length < 8) {
+            props.alertFunction('Error', 'Invalid message or to short!')
+            return false
+        }
+        return true
+    }
+
+    const handleForm = (key, value) => {
+        setContactForm((contactForm) => ({ ...contactForm, [key]: value }))
+    }
+
 
     function sendMail() {
+        setFormLoading(true)
+        setTimeout(() => {
+            if (!checkContactForm()) {
+                setFormLoading(false)
+
+                return
+            }
+            props.alertFunction('Success', 'Email sended successfully!')
+        }, 1500)
 
     }
 
 
     const copyToBoard = (e) => {
         navigator.clipboard.writeText(e.target.innerText).then(function () {
-            props.alertFunction('Copying to clipboard was successful!')
+            props.alertFunction('Success', 'Copying to clipboard was successful!')
         }, function (err) {
-            props.alertFunction('Could not copy text: ', err)
+            props.alertFunction('Error', 'Could not copy text: ', err)
         });
     }
 
@@ -22,7 +56,7 @@ function Contact(props) {
                 <div className='contactInfo'>
                     <div className='contactTitle'>
                         <h1>
-                            Get a quote
+                            <SpanDivider textArray="Get a quote" />
                         </h1>
                         <p>
                             Fill up the form and our Team will get back to you within 24 hours.
@@ -67,18 +101,19 @@ function Contact(props) {
 
                     <div className='contactFormName'>
                         <p> Your Name</p>
-                        <input type='text' />
+                        <input type='text' onChange={(e) => { handleForm('name', e.target.value) }} value={contactForm.name} />
                     </div>
                     <div className='contactFormEmail'>
                         <p> Email </p>
-                        <input type='email' />
+                        <input type='email' onChange={(e) => { handleForm('email', e.target.value) }} value={contactForm.email} />
                     </div>
                     <div className='contactFormMessage'>
                         <p> Message</p>
-                        <textarea placeholder='Message' />
+                        <textarea placeholder='Message' onChange={(e) => { handleForm('message', e.target.value) }} value={contactForm.message} />
                     </div>
                     <div className='contactFormSubmit' onClick={() => sendMail('Test Name', "alanhoffer97@hotmail.com", 'Test Subject', 'Test Message')}>
-                        <input type='button' placeholder='write your name' value="Send" />
+
+                        <button value="Send" > {formLoading ? <div class="lds-ring"><div></div><div></div><div></div><div></div></div> : 'Send'}</button>
                     </div>
                 </div>
             </section>

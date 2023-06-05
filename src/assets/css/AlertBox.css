@@ -1,21 +1,28 @@
 .AlertBox {
     position: fixed;
-    display:none;
+    display: none;
     left: 50%;
-    border-radius: 3px;
     bottom: 20px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     color: var(--secondary-color);
-    background-color: var(--terciary-color);
 }
 
-.AlertBox.active{
+.AlertBox.active {
     display: block;
 }
 
 .AlertBox p {
-    margin:0;
-    padding:10px 20px;
+    border-radius: 3px;
+    margin: 0;
+    padding: 10px 20px;
     font-size: 1rem;
+}
+
+.AlertBox p.Success {
+    background-color: var(--terciary-color);
+}
+
+.AlertBox p.Error {
+    background-color: var(--error-color);
 }

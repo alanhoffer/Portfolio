@@ -1,11 +1,13 @@
 import '../assets/css/About.css';
+import SpanDivider from './SpanDivider';
+
 
 function About() {
     return (
         <div id="about" className="About">
             <section className='meContainer'>
                 <div className='mePresentation'>
-                    <h1 className='presentationTitle'> Hi, I'm Alan FStack Developer</h1>
+                    <h1 className='presentationTitle'> <SpanDivider textArray="Hi, I'm Alan FStack Developer" /> </h1>
                     <p className='presentationText'> Back End Fan / Front End Expert / Programming Lover. </p>
                 </div>
                 <div className='meDescription'>

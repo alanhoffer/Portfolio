@@ -1,5 +1,6 @@
 import '../assets/css/Home.css';
 import welcomeImage from '../assets/images/asd.png'
+import SpanDivider from './SpanDivider';
 
 
 function Home() {
@@ -7,7 +8,7 @@ function Home() {
         <div id="home" className="Home">
             <section className='homeContainer'>
                 <div className='welcomeContainer'>
-                    <h1 className='welcomeTitle'> Full-Stack Software Developer</h1>
+                    <h1 className='welcomeTitle'> <SpanDivider textArray="Full-Stack Software Developer" /></h1>
                     <p className='welcomeText'>
                         Proficient in various programming languages and frameworks, I have the ability to create robust and scalable web applications. With a strong understanding of user experience and server-side architecture, I am able to deliver end-to-end solutions that meet client requirements.
                     </p>

@@ -24,11 +24,14 @@
     padding: 0;
 }
 
-.welcomeContainer .welcomeText {
-    font-size: 1rem;
+
+.welcomeContainer .welcomeTitle {
+    font-size: 2rem;
+    line-height: 2rem;
     margin: 0;
-    padding: 1.5rem 0;
+    padding: 0;
 }
+
 
 .welcomeContainer .welcomeButton {
     display: flex;
@@ -42,7 +45,7 @@
 }
 
 .welcomeContainer .welcomeButton a {
-    display:flex;
+    display: flex;
     align-items: center;
     color: var(--terciary-color);
     text-decoration: none;
@@ -77,14 +80,16 @@
         width: 80%;
     }
 
-    .homeContainer{
+    .homeContainer {
         flex-direction: column-reverse;
     }
+
     .homeContainer .welcomeImage {
         width: 100%;
     }
+
     .welcomeContainer {
-        margin:40px 0;
+        margin: 40px 0;
     }
-    
+
 }

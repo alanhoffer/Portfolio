@@ -16,8 +16,8 @@
     justify-content: space-between;
     flex-direction: column;
     width: 50%;
-    margin:20px;
-    padding:0 30px;
+    margin: 20px;
+    padding: 0 30px;
     background-image:
         linear-gradient(to right, var(--primary-transparent), var(--primary-color)),
         url('../images/location.jpg');
@@ -114,7 +114,13 @@
     border: 0px;
 }
 
-.contactFormSubmit input {
+.contactFormSubmit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactFormSubmit button {
     background: var(--secondary-color);
     padding: 0.6rem 1rem;
     display: block;
@@ -132,28 +138,37 @@
     margin-left: auto;
 }
 
-.contactFormSubmit input:hover {
+.contactFormSubmit button:hover {
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
+
+.contactFormSubmit button:hover  .lds-ring div {
+    border: 0.2rem solid var(--primary-color);
+    border-color: var(--primary-color) transparent transparent transparent;
+  }
 
 @media screen and (max-width: 1024px) {
     .Contact {
         width: 80%;
     }
-    .contactContent{
+
+    .contactContent {
         align-items: center;
         flex-direction: column-reverse;
     }
-    .contactInfo{
+
+    .contactInfo {
         width: 100%;
-        margin:30px 0;
+        margin: 30px 0;
     }
+
     .contactForm {
         width: 100%;
     }
+
     .contactData {
         padding: 0.5rem 0;
     }
-    
+
 }

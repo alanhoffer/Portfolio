@@ -16,6 +16,7 @@
     text-align: right;
     box-sizing: border-box;
     margin: 3px 0;
+    cursor: pointer;
     padding: 14px;
     font-size: .66rem;
     border-right: 3px solid #5c5c5c;
@@ -24,6 +25,7 @@
 
 .Navbar li a {
     text-decoration: none;
+    margin: 14px;
     color: var(--secondary-color);
 }
 

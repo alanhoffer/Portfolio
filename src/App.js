@@ -13,6 +13,7 @@ function App() {
 
   const [position, setPosition] = useState(1)
   const [alertBoxActive, setAlertBoxActive] = useState(false)
+  const [alertOptions, setAlertOptions] = useState({ isActive: false, type: 'Success', message: '' })
   const [alertMessage, setAlertMessage] = useState('')
   const [darkMode, setDarkMode] = useState(false);
 
@@ -38,13 +39,11 @@ function App() {
 
   };
 
-  const toggleAlert = (message) => {
-    setAlertMessage(message)
-    setAlertBoxActive(true)
+  const toggleAlert = (type, message) => {
+    setAlertOptions((alertOptions) => ({ ...alertOptions, isActive: true, message: message, type: type }))
 
     setTimeout(() => {
-      setAlertMessage('')
-      setAlertBoxActive(false)
+      setAlertOptions((alertOptions) => ({ ...alertOptions, isActive: false, message: '', type: 'Success' }))
     }, 2000)
 
   }
@@ -53,7 +52,7 @@ function App() {
 
   const toggleDark = () => {
     setDarkMode((darkMode) => !darkMode);
-    darkMode ?  localStorage.setItem('theme', 'light'):localStorage.setItem('theme', 'dark');
+    darkMode ? localStorage.setItem('theme', 'light') : localStorage.setItem('theme', 'dark');
   }
 
   useEffect(() => {
@@ -76,11 +75,11 @@ function App() {
       <Header darkMode={darkMode} toggleDark={toggleDark} />
       <Home />
       <About />
-      <Skills position={position} />
+      <Skills position={position} handlePosition={setPosition} />
 
       <Projects />
       <Contact alertFunction={toggleAlert} />
-      <AlertBox isActive={alertBoxActive} message={alertMessage} />
+      <AlertBox alertOptions={alertOptions} />
     </div>
   );
 }

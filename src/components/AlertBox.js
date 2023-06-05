@@ -1,11 +1,9 @@
 import '../assets/css/AlertBox.css'
 
-const AlertBox = (props) => {
-
-    console.log(props)
+const AlertBox = ({alertOptions}) => {
     return (
-        <div className={props.isActive ? "AlertBox active":"AlertBox"}>
-            <p> {props.message} </p>
+        <div className={alertOptions.isActive ? "AlertBox active":"AlertBox"}>
+            <p className={alertOptions.type}> {alertOptions.message} </p>
         </div>
     )
 }

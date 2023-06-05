@@ -1,11 +1,12 @@
 import '../assets/css/Skills.css';
+import SpanDivider from './SpanDivider';
 
 function Skills(props) {
     return (
         <div id="skills" className={props.position === 3 ? "Skills active": "Skills"}>
             <section className='skillsContainer'>
                 <h3 className='skillsSubTitle'> REMEMBER, IF YOU CAN IMAGINE IT, YOU CAN PROGRAM IT.</h3>
-                <h1 className='skillsTitle'> Skills & Experience </h1>
+                <h1 className='skillsTitle'> <SpanDivider textArray="Skills & Experience" /> </h1>
 
 
                 <p className='skillsDescription'>
