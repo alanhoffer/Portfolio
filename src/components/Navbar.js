@@ -7,11 +7,11 @@ function Navbar({ props }) {
     return (
         <nav className="Navbar">
             <ul>
-                <li><a href='#home' className={props == 1 ? 'active' : ''}>HOME</a></li>
-                <li><a href='#about' className={props == 2 ? 'active' : ''}>ABOUT</a></li>
-                <li><a href='#skills' className={props == 3 ? 'active' : ''}>SKILLS</a></li>
-                <li><a href='#projects' className={props == 4 ? 'active' : ''}>PROJECTS</a></li>
-                <li><a href='#contact' className={props == 5 ? 'active' : ''}>CONTACT</a></li>
+                <li className={props == 1 ? 'active' : ''}><a href='#home' >HOME</a></li>
+                <li className={props == 2 ? 'active' : ''}><a href='#about'>ABOUT</a></li>
+                <li className={props == 3 ? 'active' : ''}><a href='#skills'>SKILLS</a></li>
+                <li className={props == 4 ? 'active' : ''}><a href='#projects'>PROJECTS</a></li>
+                <li className={props == 5 ? 'active' : ''}><a href='#contact'>CONTACT</a></li>
             </ul>
             <div className='scrollDown'>
                 <p>

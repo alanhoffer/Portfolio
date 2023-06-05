@@ -80,7 +80,7 @@
         flex-direction: column-reverse;
     }
     .homeContainer .welcomeImage {
-        width: 50%;
+        width: 100%;
     }
     .welcomeContainer {
         margin:40px 0;

@@ -15,24 +15,24 @@
 .Navbar ul li{
     text-align: right;
     box-sizing: border-box;
-    padding: 15px 0;
+    margin: 3px 0;
+    padding: 14px;
     font-size: .66rem;
+    border-right: 3px solid #5c5c5c;
 }
 
 
 .Navbar li a {
     text-decoration: none;
-    padding: 14px;
     color: #f0f8ff;
-    border-right: 3px solid #5c5c5c;
 }
 
-.Navbar li a.active{
+.Navbar ul li.active{
     border-right: 3px solid #f0f8ff;
     transition: all .3s ease-in-out;
 }
 
-.Navbar li a:hover{
+.Navbar ul li.hover{
     border-right: 3px solid #f0f8ff;
     transition: all .3s ease-in-out;
 }
@@ -79,5 +79,8 @@
 @media screen and (max-width: 1024px) {
     .Navbar {
         transform: translate(-1%, -40%);
+    }
+    .Navbar li a{
+        display:none;
     }
 }

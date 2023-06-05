@@ -16,7 +16,7 @@ function Contact(props) {
                 <div className='contactInfo'>
                     <div className='contactTitle'>
                         <h1>
-                            Get a qoute
+                            Get a quote
                         </h1>
                         <p>
                             Fill up the form and our Team will get back to you within 24 hours.
