@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import About from './components/About';
 import Home from './components/Home';
@@ -14,6 +14,7 @@ function App() {
   const [position, setPosition] = useState(1)
   const [alertBoxActive, setAlertBoxActive] = useState(false)
   const [alertMessage, setAlertMessage] = useState('')
+  const [darkMode, setDarkMode] = useState(false);
 
   const scrollEvent = (event) => {
     const main = event.target;
@@ -50,13 +51,32 @@ function App() {
 
 
 
+  const toggleDark = () => {
+    setDarkMode((darkMode) => !darkMode);
+    darkMode ?  localStorage.setItem('theme', 'light'):localStorage.setItem('theme', 'dark');
+  }
+
+  useEffect(() => {
+    if (localStorage.getItem('theme')) {
+      if (localStorage.getItem('theme') === 'dark') {
+        setDarkMode(true);
+      } else if (localStorage.getItem('theme') === 'light') {
+        setDarkMode(false);
+      }
+    } else {
+      setDarkMode(false);
+    }
+  })
+
+
+
   return (
-    <div className="App" onScroll={(event) => scrollEvent(event)}>
+    <div className={darkMode ? "App dark" : "App"} onScroll={(event) => scrollEvent(event)}>
       <Navbar props={position} />
-      <Header />
+      <Header darkMode={darkMode} toggleDark={toggleDark} />
       <Home />
       <About />
-      <Skills />
+      <Skills position={position} />
 
       <Projects />
       <Contact alertFunction={toggleAlert} />

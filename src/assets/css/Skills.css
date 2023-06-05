@@ -47,23 +47,22 @@
     flex-wrap: wrap;
 }
 
-.skillsListItem{
+.Skills.active .skillsContainer .skillsListItem{
     animation: example;
-    animation-duration: 3s;
 }
 
 
-.skillsList .skillsListItem:nth-child(1) { animation-duration: 0.3s }
-.skillsList .skillsListItem:nth-child(2) { animation-duration: 0.5s }
-.skillsList .skillsListItem:nth-child(3) { animation-duration: 0.7s }
-.skillsList .skillsListItem:nth-child(4) { animation-duration: 0.9s }
-.skillsList .skillsListItem:nth-child(5) { animation-duration: 1s }
-.skillsList .skillsListItem:nth-child(6) { animation-duration: 1.1s }
-.skillsList .skillsListItem:nth-child(7) { animation-duration: 1.2s }
-.skillsList .skillsListItem:nth-child(8) { animation-duration: 1.3s }
-.skillsList .skillsListItem:nth-child(9) { animation-duration: 1.4s }
-.skillsList .skillsListItem:nth-child(10) { animation-duration: 1.5s }
-.skillsList .skillsListItem:nth-child(11) { animation-duration: 1.6s }
+.Skills.active .skillsContainer .skillsListItem:nth-child(1) { animation-duration: 0.3s }
+.Skills.active .skillsContainer .skillsListItem:nth-child(2) { animation-duration: 0.5s }
+.Skills.active .skillsContainer .skillsListItem:nth-child(3) { animation-duration: 0.7s }
+.Skills.active .skillsContainer .skillsListItem:nth-child(4) { animation-duration: 0.9s }
+.Skills.active .skillsContainer .skillsListItem:nth-child(5) { animation-duration: 1s }
+.Skills.active .skillsContainer .skillsListItem:nth-child(6) { animation-duration: 1.1s }
+.Skills.active .skillsContainer .skillsListItem:nth-child(7) { animation-duration: 1.2s }
+.Skills.active .skillsContainer .skillsListItem:nth-child(8) { animation-duration: 1.3s }
+.Skills.active .skillsContainer .skillsListItem:nth-child(9) { animation-duration: 1.4s }
+.Skills.active .skillsContainer .skillsListItem:nth-child(10) { animation-duration: 1.5s }
+.Skills.active .skillsContainer .skillsListItem:nth-child(11) { animation-duration: 1.6s }
 
 @keyframes example {
     from {

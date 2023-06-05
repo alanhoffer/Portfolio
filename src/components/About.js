@@ -20,7 +20,7 @@ function About() {
                         Adaptability is one of my strengths, allowing me to keep up with evolving technologies. I am always eager to learn and improve my skills. My dedication to continuous growth drives me to seek opportunities for self-improvement. In summary, I am a communicative, committed, and adaptable web developer, constantly aiming to enhance my abilities.
                     </p>
                     <div className='downloadResume'>
-                        <a href="/files/cv-en.pdf">RESUME</a>
+                        <a href="/files/cv-en.pdf">DOWNLOAD CV</a>
                     </div>
                 </div>
 

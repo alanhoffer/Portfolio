@@ -19,7 +19,7 @@
     margin:20px;
     padding:0 30px;
     background-image:
-        linear-gradient(to right, #141416f6, var(--primary-color)),
+        linear-gradient(to right, var(--primary-transparent), var(--primary-color)),
         url('../images/location.jpg');
     background-repeat: no-repeat;
     background-size: cover;

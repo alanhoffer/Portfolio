@@ -12,7 +12,8 @@
     align-items: center;
     padding: 20px;
     background-image:
-        linear-gradient(to bottom, #141416e7, #141416e7),
+        /* linear-gradient(to bottom, #141416e7, #141416e7), */
+        linear-gradient(to bottom, var(--primary-transparent), var(--primary-transparent)),
         url('../images/me.png');
     background-repeat: no-repeat;
     animation: imageAnimation;

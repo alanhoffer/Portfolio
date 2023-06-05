@@ -3,6 +3,8 @@ html {
 }
 
 .App {
+
+    transition: all .3s ease-in-out;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     display: flex;
@@ -13,6 +15,14 @@ html {
     scroll-snap-type: y mandatory;
     flex-direction: column;
     width: 100vw;
+}
+
+.App.dark {
+    --primary-color: #f0f8ff;
+    --secondary-color: #141416;
+    --terciary-color: #44AF91;
+    --primary-transparent: #141416f6;
+    --primary-transparent: #f0f8ff94;
 }
 
 @media screen and (max-width: 3940px) {

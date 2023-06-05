@@ -42,7 +42,8 @@
 }
 
 .welcomeContainer .welcomeButton a {
-    margin-right: 5px;
+    display:flex;
+    align-items: center;
     color: var(--terciary-color);
     text-decoration: none;
 }
