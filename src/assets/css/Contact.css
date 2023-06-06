@@ -19,7 +19,7 @@
     margin: 20px;
     padding: 0 30px;
     background-image:
-        linear-gradient(to right, var(--primary-transparent), var(--primary-color)),
+        linear-gradient(to right, var(--primary-transparent), var(--primary-transparent)),
         url('../images/location.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,12 +30,13 @@
 }
 
 .contactTitle p {
+    font-weight: 500;
     font-size: 1rem;
     opacity: 0.7;
 }
 
 .contactData {
-    padding: 3rem 0;
+    font-weight: 500;
 }
 
 
@@ -43,8 +44,8 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 0 20px 0 10px;
-    margin: 5px;
+    padding: 10px 10px;
+    margin: 1rem 0.5rem;
     max-width: fit-content;
     border-radius: 6px;
     user-select: none;
@@ -56,8 +57,12 @@
 }
 
 .contactDataItem svg {
-    margin-right: 15px;
+    margin-right: 1rem;
     width: 1rem;
+}
+
+.contactDataItem p{
+    margin:0;
 }
 
 .contactSocial {
@@ -65,9 +70,11 @@
 }
 
 .contactSocialItem {
+    display:flex;
+    align-items: center;
     cursor: pointer;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 1rem;
     box-sizing: border-box;
     border-radius: 6px;
     user-select: none;
@@ -75,6 +82,7 @@
 }
 
 .contactSocialItem svg {
+    color:var(--secondary-color);
     height: 1.5rem;
 }
 
@@ -124,6 +132,7 @@
     background: var(--secondary-color);
     padding: 0.6rem 1rem;
     display: block;
+    height: 2.5rem;
     border: 2px solid var(--secondary-color);
     background-color: transparent;
     border-radius: 6px;

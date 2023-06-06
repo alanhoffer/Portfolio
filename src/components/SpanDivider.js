@@ -4,7 +4,7 @@ const SpanDivider = ({ textArray }) => {
 
     return (
         <>
-            {Array.from(textArray).map((text) => <span>{text}</span>)}
+            {Array.from(textArray).map((text) => <span className='spanAnimated'>{text}</span>)}
         </>
     )
 }

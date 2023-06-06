@@ -1,9 +1,9 @@
-span {
+.spanAnimated {
     display:inline-block;
     white-space: pre-wrap;
 }
 
-span:hover {
+.spanAnimated:hover {
     animation: jump 0.5s linear alternate;
     transform-origin: 50% 50%;
     cursor: default;
