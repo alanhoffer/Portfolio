@@ -17,6 +17,19 @@
 }
 
 
+.tecnologysContainer{
+    display:flex;
+    align-items: center;
+}
+
+.tecnologysItem{
+    font-size: 16px;
+    margin:0;
+    margin-right:10px;
+    padding:5px;
+    border-radius: 3px;
+    font-weight: 500;
+}
 
 
 .sliderItemContainer {

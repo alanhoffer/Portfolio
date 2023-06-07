@@ -6,6 +6,20 @@
   --primary-transparent: #141416f6;
   --secondary-transparent: #f0f8ff94;
   --error-color: #bd6348;
+
+  --vuejs-color: #3EAF7Bc5;
+  --javascript-color: #E8D44Dc5;
+  --react-color: #00D1F7c5;
+  --css3-color: #254BDDc5;
+  --html5-color: #dd4a25c5;
+  --git-color: #E84E31c5;
+  --nestjs-color: #D9224Cc5;
+  --python-color: #356C9Bc5;
+  --mysql-color: #507E9Cc5;
+
+  --basic-color: #DD4B25;
+  --frontend-color: #254BDD;
+  --backend-color: #D9224Cc5;
 }
 
 /* width */
