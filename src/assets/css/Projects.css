@@ -33,9 +33,9 @@
 
 
 .sliderItemContainer {
-    min-width: 30%;
     text-align: left;
 }
+
 
 .sliderItemContainer h3 {
     opacity: .7;
@@ -45,10 +45,11 @@
 
 
 .sliderImageContainer {
-
     margin-right: 50px;
     
 }
+
+
 
 .itemButton {
     display: flex;
@@ -84,6 +85,34 @@
     width: 2.5rem !important;
 }
 
+@media screen and (max-width:1600px) {
+
+    .carousel .slider-wrapper {
+        width: 90% !important;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:1440px) {
+
+    .carousel .slider-wrapper {
+        width: 70% !important;
+    }
+    
+    
+}
+
+@media screen and (max-width:1280px) {
+
+    .carousel .slider-wrapper {
+        width: 60% !important;
+    }
+    
+    
+}
+
 @media screen and (max-width:1024px) {
     .Projects {
         width: 80%;
@@ -94,7 +123,6 @@
         flex-direction: column;
     }
     .sliderImageContainer {
-
         margin-right: 0px;
         
     }

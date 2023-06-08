@@ -13,20 +13,19 @@
 
 .contactInfo {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     width: 50%;
-    margin: 20px;
-    padding: 0 30px;
-    background-image:
+    margin: 0 20px;
+    /*background-image:
         linear-gradient(to right, var(--primary-transparent), var(--primary-transparent)),
         url('../images/location.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 .contactTitle h1 {
     font-size: 2rem;
+    margin-top: 1rem;
 }
 
 .contactTitle p {
@@ -93,7 +92,6 @@
 .contactForm {
     display: flex;
     width: 35%;
-    justify-content: center;
     flex-direction: column;
 }
 
