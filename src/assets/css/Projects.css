@@ -25,8 +25,9 @@
 .tecnologysItem{
     font-size: 16px;
     margin:0;
+    border: 1px solid var(--secondary-color);
     margin-right:10px;
-    padding:5px;
+    padding:3px 7px;
     border-radius: 3px;
     font-weight: 500;
 }
@@ -101,7 +102,6 @@
         width: 70% !important;
     }
     
-    
 }
 
 @media screen and (max-width:1280px) {
@@ -109,7 +109,6 @@
     .carousel .slider-wrapper {
         width: 60% !important;
     }
-    
     
 }
 

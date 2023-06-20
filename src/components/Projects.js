@@ -28,12 +28,12 @@ function Projects() {
                             Lemon Lane is an online store for vintage clothing, offering exclusive design caps, t-shirts, pants, hoodies, jackets, and socks. It is accessible from any device, with authentication through popular social media, nationwide shipping in Argentina, and diverse payment methods using third-party technology.
                         </p>
                         <div className='tecnologysContainer'>
-                            <p style={{ backgroundColor: 'var(--html5-color)' }} className='tecnologysItem'>HTML</p>
-                            <p style={{ backgroundColor: 'var(--css3-color)' }} className='tecnologysItem'>CSS3</p>
-                            <p style={{ backgroundColor: 'var(--javascript-color)' }} className='tecnologysItem'>JavaScript</p>
-                            <p style={{ backgroundColor: 'var(--vuejs-color)' }} className='tecnologysItem'>VueJS</p>
-                            <p style={{ backgroundColor: 'var(--backend-color)' }} className='tecnologysItem'>NestJS</p>
-                            <p style={{ backgroundColor: 'var(--backend-color)' }} className='tecnologysItem'>MySQL</p>
+                            <p className='tecnologysItem'>HTML</p>
+                            <p className='tecnologysItem'>CSS3</p>
+                            <p className='tecnologysItem'>JavaScript</p>
+                            <p className='tecnologysItem'>VueJS</p>
+                            <p className='tecnologysItem'>NestJS</p>
+                            <p className='tecnologysItem'>MySQL</p>
                         </div>
                         <div className='itemButton'>
                             <a href='https://lemon-lane.vercel.app/' target="_blank">Visit the app</a>
@@ -55,10 +55,10 @@ function Projects() {
                             Apitool is a mobile app designed for beekeepers, providing efficient hive management and informed decision-making, including hive tracking, health monitoring, honey production tracking, task management, and event calendar. Simplifying beekeeping activities, it empowers beekeepers to optimize their work.
                         </p>
                         <div className='tecnologysContainer'>
-                            <p style={{ backgroundColor: 'var(--html5-color)' }} className='tecnologysItem'>HTML</p>
-                            <p style={{ backgroundColor: 'var(--css3-color)' }} className='tecnologysItem'>CSS3</p>
-                            <p style={{ backgroundColor: 'var(--javascript-color)' }} className='tecnologysItem'>JavaScript</p>
-                            <p style={{ backgroundColor: 'var(--vuejs-color)' }} className='tecnologysItem'>VueJS</p>
+                            <p className='tecnologysItem'>HTML</p>
+                            <p className='tecnologysItem'>CSS3</p>
+                            <p className='tecnologysItem'>JavaScript</p>
+                            <p className='tecnologysItem'>VueJS</p>
                         </div>
                         <div className='itemButton'>
                             <a href='https://apitool-app-vue.vercel.app/#/products' target="_blank">Visit the app</a>
@@ -81,11 +81,11 @@ function Projects() {
                             Taskeano is a versatile to-do app that helps you stay organized and focused. With TaskMaster, you can easily create, manage, and prioritize tasks, set reminders, and track your progress. The app offers intuitive features such as categorization, due dates, and task notes, ensuring that you never miss an important deadline.
                         </p>
                         <div className='tecnologysContainer'>
-                            <p style={{ backgroundColor: 'var(--html5-color)' }} className='tecnologysItem'>HTML</p>
-                            <p style={{ backgroundColor: 'var(--css3-color)' }} className='tecnologysItem'>CSS3</p>
-                            <p style={{ backgroundColor: 'var(--javascript-color)' }} className='tecnologysItem'>JavaScript</p>
-                            <p style={{ backgroundColor: 'var(--vuejs-color)' }} className='tecnologysItem'>VueJS</p>
-                            <p style={{ backgroundColor: 'var(--backend-color)' }} className='tecnologysItem'>Mockapi</p>
+                            <p className='tecnologysItem'>HTML</p>
+                            <p className='tecnologysItem'>CSS3</p>
+                            <p className='tecnologysItem'>JavaScript</p>
+                            <p className='tecnologysItem'>VueJS</p>
+                            <p className='tecnologysItem'>Mockapi</p>
                         </div>
                         <div className='itemButton'>
                             <a href='https://todo-wine-five.vercel.app/' target="_blank">Visit the app</a>
