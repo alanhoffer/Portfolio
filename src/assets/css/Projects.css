@@ -11,22 +11,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     box-sizing: border-box;
     height: 600px;
 }
 
 
+.carousel-root {
+    width: 100%;
+}
 .tecnologysContainer{
     display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
     align-items: center;
 }
 
 .tecnologysItem{
-    font-size: 16px;
+    font-size: 1rem;
     margin:0;
     border: 1px solid var(--secondary-color);
-    margin-right:10px;
     padding:3px 7px;
     border-radius: 3px;
     font-weight: 500;
@@ -35,6 +38,7 @@
 
 .sliderItemContainer {
     text-align: left;
+    width: 100%;
 }
 
 
@@ -89,7 +93,6 @@
 @media screen and (max-width:1600px) {
 
     .carousel .slider-wrapper {
-        width: 90% !important;
     }
     
     
@@ -99,7 +102,6 @@
 @media screen and (max-width:1440px) {
 
     .carousel .slider-wrapper {
-        width: 70% !important;
     }
     
 }
@@ -107,7 +109,6 @@
 @media screen and (max-width:1280px) {
 
     .carousel .slider-wrapper {
-        width: 60% !important;
     }
     
 }
@@ -120,6 +121,7 @@
     .sliderItem {
         height: auto;
         flex-direction: column;
+        margin:5px;
     }
     .sliderImageContainer {
         margin-right: 0px;
