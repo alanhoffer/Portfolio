@@ -75,6 +75,32 @@ function Projects() {
                         <img alt='' src={project3} />
                     </div>
                     <div className='sliderItemContainer'>
+                        <h3>RUST COMUNNITY WEBSITE</h3>
+                        <h1>RUSTAMIEL</h1>
+                        <p>
+                            Explore the thrilling world of Rust through our official website. Immerse yourself in the game with a welcome message, enjoy the photos of the month, and choose from a wide variety of community servers. Additionally, discover our shop to purchase VIP benefits. Welcome to the ultimate Rust online experience!                        </p>
+                        <div className='tecnologysContainer'>
+                            <p className='tecnologysItem'>HTML</p>
+                            <p className='tecnologysItem'>CSS3</p>
+                            <p className='tecnologysItem'>JavaScript</p>
+                            <p className='tecnologysItem'>ReactJS</p>
+                            <p className='tecnologysItem'>Firebase</p>
+                        </div>
+                        <div className='itemButton'>
+                            <a href='https://rustamiel.vercel.app/' target="_blank">Visit the app</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                            <img alt='' src='https://i.imgur.com/Jk3pjRv.png' />
+                        </div>
+                    </div>
+                </div>
+                <div className='sliderItem'>
+                    <div className='sliderImageContainer'>
+
+                        <img alt='' src={project3} />
+                    </div>
+                    <div className='sliderItemContainer'>
                         <h3>TO DO MANAGEMENT WEBSITE</h3>
                         <h1>TASKEANO</h1>
                         <p>
