@@ -148,7 +148,7 @@
 
 .contactFormSubmit a:hover {
     color: var(--primary-color);
-    background-color: var(--secondary-color);
+    background-color: red;
 }
 
 .contactFormSubmit a:hover  .lds-ring div {

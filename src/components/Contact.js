@@ -36,6 +36,8 @@ function Contact(props) {
 
                 return
             }
+            
+             setFormLoading(false)
             props.alertFunction('Success', 'Email sended successfully!')
         }, 1500)
 
@@ -166,9 +168,9 @@ function Contact(props) {
                         <p> Message</p>
                         <textarea placeholder='Message' onChange={(e) => { handleForm('message', e.target.value) }} value={contactForm.message} />
                     </div>
-                    <div className='contactFormSubmit' onClick={(e) => handleSubmit(e)}>
+                    <div className='contactFormSubmit' >
 
-                        <a  value="Send" > {formLoading ? <div class="lds-ring"><div></div><div></div><div></div><div></div></div> : 'Send'}</a>
+                        <a  value="Send" > {formLoading ? <div class="lds-ring"><div></div><div></div><div></div><div></div></div> : 'Working on it'}</a>
                     </div>
                 </div>
             </section >
