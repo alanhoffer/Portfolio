@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../assets/css/Contact.css';
 import SpanDivider from './SpanDivider';
+import axios from 'axios';
 
 function Contact(props) {
 
@@ -27,7 +28,6 @@ function Contact(props) {
         setContactForm((contactForm) => ({ ...contactForm, [key]: value }))
     }
 
-
     function sendMail() {
         setFormLoading(true)
         setTimeout(() => {
@@ -40,6 +40,57 @@ function Contact(props) {
         }, 1500)
 
     }
+
+
+    const handleSubmit = (event) => {
+
+        sendMail()
+        event.preventDefault();
+
+        const data = {
+            personalizations: [
+              {
+                to: [
+                  {
+                    email: 'anxiousmove@gmail.com' // Reemplaza con la dirección de correo electrónico a la que deseas enviar el mensaje
+                  }
+                ],
+                subject: 'Nuevo mensaje de contacto'
+              }
+            ],
+            from: {
+              email: 'alanhoffer2012@gmail.com' // Reemplaza con la dirección de correo electrónico remitente
+            },
+            content: [
+              {
+                type: 'text/plain',
+                value: `De: jose <jose@gmail.com>\n\nmensajeee`
+              }
+            ]
+          };
+        
+          fetch('https://api.sendgrid.com/v3/mail/send', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer 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' // Reemplaza con tu clave de API SendGrid
+            },
+            body: JSON.stringify(data)
+          })
+            .then(response => response.json())
+            .then(result => {
+              console.log('Correo electrónico enviado:', result);
+              // Realiza acciones adicionales o muestra un mensaje de éxito en la interfaz de usuario
+            })
+            .catch(error => {
+              console.error('Error al enviar el correo electrónico:', error);
+              // Muestra un mensaje de error en la interfaz de usuario
+            });
+    
+
+      };
+
+
 
 
     const copyToBoard = (e) => {
@@ -115,9 +166,9 @@ function Contact(props) {
                         <p> Message</p>
                         <textarea placeholder='Message' onChange={(e) => { handleForm('message', e.target.value) }} value={contactForm.message} />
                     </div>
-                    <div className='contactFormSubmit' onClick={() => sendMail('Test Name', "alanhoffer97@hotmail.com", 'Test Subject', 'Test Message')}>
+                    <div className='contactFormSubmit' onClick={(e) => handleSubmit(e)}>
 
-                        <a href={$`mailto:alanhoffer2012@gmail.com?subject = ${contactForm.name + contactForm.email} = Message ${contactForm.message}`} value="Send" > {formLoading ? <div class="lds-ring"><div></div><div></div><div></div><div></div></div> : 'Send'}</a>
+                        <a  value="Send" > {formLoading ? <div class="lds-ring"><div></div><div></div><div></div><div></div></div> : 'Send'}</a>
                     </div>
                 </div>
             </section >

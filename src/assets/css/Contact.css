@@ -126,10 +126,11 @@
     justify-content: center;
 }
 
-.contactFormSubmit button {
+.contactFormSubmit a {
     background: var(--secondary-color);
-    padding: 0.6rem 1rem;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 2.5rem;
     border: 2px solid var(--secondary-color);
     background-color: transparent;
@@ -145,12 +146,12 @@
     margin-left: auto;
 }
 
-.contactFormSubmit button:hover {
+.contactFormSubmit a:hover {
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
 
-.contactFormSubmit button:hover  .lds-ring div {
+.contactFormSubmit a:hover  .lds-ring div {
     border: 0.2rem solid var(--primary-color);
     border-color: var(--primary-color) transparent transparent transparent;
   }
