@@ -117,7 +117,7 @@ function Contact(props) {
                     </div>
                     <div className='contactFormSubmit' onClick={() => sendMail('Test Name', "alanhoffer97@hotmail.com", 'Test Subject', 'Test Message')}>
 
-                        <button value="Send" > {formLoading ? <div class="lds-ring"><div></div><div></div><div></div><div></div></div> : 'Send'}</button>
+                        <a href={$`mailto:alanhoffer2012@gmail.com?subject = ${contactForm.name + contactForm.email} = Message ${contactForm.message}`} value="Send" > {formLoading ? <div class="lds-ring"><div></div><div></div><div></div><div></div></div> : 'Send'}</a>
                     </div>
                 </div>
             </section >
