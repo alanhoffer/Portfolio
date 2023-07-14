@@ -3,6 +3,7 @@ import '../assets/css/Projects.css';
 import project1 from '../assets/images/project-1.png'
 import project2 from '../assets/images/project-2.png'
 import project3 from '../assets/images/project-3.png'
+import project4 from '../assets/images/project-4.png'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 import { Carousel } from 'react-responsive-carousel';
@@ -72,7 +73,7 @@ function Projects() {
                 <div className='sliderItem'>
                     <div className='sliderImageContainer'>
 
-                        <img alt='' src={project3} />
+                        <img alt='' src={project4} />
                     </div>
                     <div className='sliderItemContainer'>
                         <h3>RUST COMUNNITY WEBSITE</h3>
