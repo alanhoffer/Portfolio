@@ -4,6 +4,10 @@ import SpanDivider from './SpanDivider';
 
 
 function Home() {
+
+      // Some random colors
+ 
+
     return (
         <div id="home" className="Home">
             <section className='homeContainer'>

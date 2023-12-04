@@ -8,6 +8,8 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import AlertBox from './components/AlertBox';
+import './assets/animation/animation.js'
+import { VANTA } from 'vanta';
 
 function App() {
 
@@ -16,6 +18,22 @@ function App() {
   const [alertOptions, setAlertOptions] = useState({ isActive: false, type: 'Success', message: '' })
   const [alertMessage, setAlertMessage] = useState('')
   const [darkMode, setDarkMode] = useState(false);
+
+  // useEffect(() => {
+  //     VANTA.CELLS({
+  //       el: "#App",
+  //       mouseControls: true,
+  //       touchControls: true,
+  //       gyroControls: false,
+  //       minHeight: 200.00,
+  //       minWidth: 200.00,
+  //       scale: 1.00,
+  //       color1: 0xeb1b1,
+  //       color2: 0x141416,
+  //       size: 1.40,
+  //       speed: 0.60
+  //     })
+  // }, [darkMode])
 
   const scrollEvent = (event) => {
     const main = event.target;
@@ -50,6 +68,7 @@ function App() {
 
 
 
+
   const toggleDark = () => {
     setDarkMode((darkMode) => !darkMode);
     darkMode ? localStorage.setItem('theme', 'light') : localStorage.setItem('theme', 'dark');
@@ -69,8 +88,10 @@ function App() {
 
 
 
+
   return (
-    <div className={darkMode ? "App dark" : "App"} onScroll={(event) => scrollEvent(event)}>
+    <div id="App" className={darkMode ? "App dark" : "App"} onScroll={(event) => scrollEvent(event)}>
+
       <Navbar position={position} handlePosition={setPosition} />
       <Header darkMode={darkMode} toggleDark={toggleDark} />
       <Home />
